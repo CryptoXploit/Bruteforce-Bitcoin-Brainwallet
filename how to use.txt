@@ -1,0 +1,10 @@
+#Abe example
+python bbb.py -t abe -d dictionary.txt -o found.txt -s 127.0.0.1 -p 2751 -c Bitcoin
+#Insight example
+python bbb.py -t insight -d dictionary.txt -o found.txt
+#Private key dictionary example This is also known as secret exponent, mixed hex and wif format.
+python bbb.py -d keys.txt -t insight -o found.txt -k
+#Blockchain.info example Note: there is a 10 second wait between API calls to respect blockchain.info limits.
+python bbb.py -t blockchaininfo -d dictionary.txt -o found.txt
+
+
