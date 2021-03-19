@@ -114,7 +114,7 @@ class BlockchainInfo(BaseBlockExplorer):
 
     def __init__(self):
         BaseBlockExplorer.__init__(self)
-        self._api_limit_seconds = 10
+        self._api_limit_seconds = 1
         logging.info("Note there is a {} second wait between each API call to respect posted limits".format(self._api_limit_seconds))
         self._base_url = "https://blockchain.info"
         self._base_url_received = "{}/q/getreceivedbyaddress".format(self._base_url)
